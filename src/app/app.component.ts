@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxshareService } from 'ngxshare';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sharedata';
+
+constructor(public myshare:NgxshareService ){
+ this.myshare.setItem('test','teeeeeeeeeeeeest');
+ console.log(this.myshare.getItem('test7'));
+}
+
 }
