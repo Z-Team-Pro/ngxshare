@@ -10,8 +10,9 @@ export class AppComponent {
   title = 'sharedata';
 
 constructor(public myshare:NgxshareService ){
- this.myshare.setItem('test','teeeeeeeeeeeeest');
- console.log(this.myshare.getItem('test7'));
+ this.myshare.setItem('test','teeeeest');
+ //console.log(this.myshare.getItem('test'));
+ //console.log('test2',this.myshare.getItem('test2'));
 }
 
 }
